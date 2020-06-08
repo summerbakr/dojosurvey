@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+<body>
+    <h1>Please fill out the form below about your campus.</h1>
+    <form action="/submit" method="post">
+    <p>Your Name: <input type="text" name="Name"/></p>
+    <p>Dojo Location: <input type="text" name="Location"/></p>
+    <p>Favorite Language:
+    <select name="Language">
+        <option value="C#">C#</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Ruby">Ruby</option>
+    </select></p>
+    <p>Comment (optional):<textarea name="Comment"></textarea></p>
+    <input type="Submit" value="Submit Form"/>
+    </form>
+    
+
+</body>
+</html>
