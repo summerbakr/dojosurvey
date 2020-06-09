@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+@using Form.Models;
+@model Survey
     <h1>Here are your form results!</h1>
-    <p>Name: @ViewBag.Name</p>
-    <p>Location: @ViewBag.Location</p>
-    <p>Your Fave Language: @ViewBag.Language</p>
-    <p>Your Comment: @ViewBag.Comment</p>
+    <p>Name: @ViewBag.Survey.Name</p>
+    <p>Location: @ViewBag.Survey.Location</p>
+    <p>Your Fave Language: @ViewBag.Survey.Language</p>
+    <p>Your Comment: @ViewBag.Survey.Comment</p>
 
     <a href="/">Back to form!</a>
 

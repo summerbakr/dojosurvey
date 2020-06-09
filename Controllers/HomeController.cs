@@ -1,4 +1,5 @@
-    using Microsoft.AspNetCore.Mvc;
+using Form.Models;
+using Microsoft.AspNetCore.Mvc;
     namespace Form.Controllers     //be sure to use your own project's namespace!
     {
         public class HomeController : Controller   //remember inheritance??
@@ -15,12 +16,10 @@
             [HttpPost]
             [Route("submit")]
 
-            public IActionResult FormResult(string Name, string Location, string Language, string Comment)
+            public IActionResult FormResult(Survey yoursurvey)
             {   
-                ViewBag.Name=Name;
-                ViewBag.Location=Location;
-                ViewBag.Language=Language;
-                ViewBag.Comment=Comment;
+                ViewBag.Survey=yoursurvey;
+                ;
 
                 return View();
             }

@@ -7,6 +7,9 @@
 
 </head>
 <body>
+@using Form.Models;
+@model Survey;
+
     <h1>Please fill out the form below about your campus.</h1>
     <form action="/submit" method="post">
     <p>Your Name: <input type="text" name="Name"/></p>
